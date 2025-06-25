@@ -39,3 +39,6 @@ This project performs a complete pipeline of financial time series analysis on *
 ```bash
 pip install yfinance pandas scikit-learn matplotlib
 
+
+
+
