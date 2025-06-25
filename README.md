@@ -32,6 +32,19 @@ This project performs a complete pipeline of financial time series analysis on *
 - scikit-learn
 - matplotlib
 
+## 📈 Visualisations
+
+### 1. Cumulative Return since 2022
+![Cumulative Return](cumulative_return.png)
+
+### 2. Gold Price with 20-Day Moving Average
+![Gold Historical](historical.png)
+
+### 3. Gold Price Prediction - Random Forest
+![Gold Forecast](prediction.png)
+
+
+
 ## 🚀 Run it yourself
 
 1. **Install dependencies**:
