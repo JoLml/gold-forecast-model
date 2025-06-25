@@ -1,32 +1,41 @@
-# Gold Price Analysis & Forecasting with Random Forest
+# 🧠 Gold Price Analysis & Forecasting with Random Forest
 
-This project performs a full pipeline of financial time series analysis on Gold Futures (`GC=F`), using data from Yahoo Finance. It includes:
-- Data collection via the `yfinance` API
-- Statistical analysis (cumulative return, volatility, moving average, correlation)
-- Random Forest model for price prediction
-- GridSearchCV hyperparameter tuning
-- Visualizations of historical performance and model predictions
+This project performs a complete pipeline of financial time series analysis on **Gold Futures (GC=F)** using historical data from Yahoo Finance.
 
-## Key Results
-- Cumulative Return: ~85.86%
-- Annualized Return: ~19.54%
-- Volatility: ~15.64%
-- Model R² Score: ~99.73%
+## 🔍 Project Highlights
 
-## Technologies Used
-- Python
-- yfinance
+- ✅ Data collection via the `yfinance` API
+- 📊 Statistical analysis:
+  - Cumulative return
+  - Annualized volatility & return
+  - Rolling moving average
+  - Price/MA20 correlation
+- 🌲 Machine Learning:
+  - Random Forest Regressor
+  - `GridSearchCV` hyperparameter tuning
+- 📈 Visualizations of historical performance & model predictions
+
+## 📌 Key Results
+
+| Metric                | Value     |
+|----------------------|-----------|
+| Cumulative Return     | ~85.86%   |
+| Annualized Return     | ~19.54%   |
+| Annualized Volatility | ~15.64%   |
+| Model R² Score        | ~99.73%   |
+
+## 🧰 Technologies Used
+
+- Python 3.x
+- [yfinance](https://pypi.org/project/yfinance/)
 - pandas
 - scikit-learn
 - matplotlib
 
-## Run it yourself
-Make sure you have the following libraries:
-```
-pip install yfinance pandas scikit-learn matplotlib
-```
+## 🚀 Run it yourself
 
-Then run:
-```
-python main.py
-```
+1. **Install dependencies**:
+
+```bash
+pip install yfinance pandas scikit-learn matplotlib
+
