@@ -1,0 +1,23 @@
+# Visualisation 1 : Historique des prix avec MA20
+plt.figure(figsize=(14, 6))
+plt.plot(data.index, data['Gold_Close'], label="Gold Price", color="black")
+plt.plot(data.index, data['MA20'], label="MA20", color="orange", linestyle="--")
+plt.title("Gold Price with 20-Day Moving Average")
+plt.xlabel("Date")
+plt.ylabel("Price ($)")
+plt.legend()
+plt.tight_layout()
+plt.savefig("historical.png")
+plt.show()
+
+# Visualisation 2 : Prédiction
+plt.figure(figsize=(14, 6))
+plt.plot(data.index[-len(y_pred):], y[-len(y_pred):], label='Actual Price', color='black')
+plt.plot(data.index[-len(y_pred):], y_pred, label='Predicted Price', color='green', linestyle='--')
+plt.title("Gold Price Prediction - Random Forest")
+plt.xlabel("Date")
+plt.ylabel("Price ($)")
+plt.legend()
+plt.tight_layout()
+plt.savefig("prediction.png")
+plt.show()
